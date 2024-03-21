@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Ableeins Journey | Ableeins </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+    <title>Journey Ableeins</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Ableeins</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Link Information</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    
+    <Section>
+        <h2 id="text"><span>it's time for a new</span><br>Journey Ableeins</h2>
+        
+        <img src="https://user-images.githubusercontent.com/65358991/170092504-132fa547-5ced-40e5-ab64-ded61518fac2.png" id="bird1">
+        <img src="https://user-images.githubusercontent.com/65358991/170092542-9747edcc-fb51-4e21-aaf5-a61119393618.png" id="bird2">
+        <img src="https://user-images.githubusercontent.com/65358991/170092559-883fe071-eb4f-4610-8c8b-a037d061c617.png" id="forest">
+        
+        <a href="#" id="btn">Explore With Ableeins</a>
+        
+        <img src="https://user-images.githubusercontent.com/65358991/170092605-eada6510-d556-45cc-b7fa-9e4d1d258d26.png" id="rocks">
+        <img src="https://user-images.githubusercontent.com/65358991/170092616-5a70c4af-2eed-496f-bde9-b5fcc7142a31.png" id="water">
+    </Section>
+    
+    <div class="sec">
+        <h2>Ableeins</h2>
+        <p>Ableeins adalah sebuah karya untuk berkembang dan bersatu melalui teknologi, Komunitas yang dibuat pada Tahun 2024 ini menjadi acuan para pemuda yang berprestasi dan berlomba dalam bidang teknologi
+<br><br>
+Sebagai pemilik komunitas IT, saya merasa memiliki tanggung jawab besar untuk menciptakan lingkungan yang mendukung pertumbuhan dan kolaborasi. Saya percaya bahwa dengan saling membantu dan berbagi pengetahuan, kita semua bisa menjadi lebih baik dalam bidang ini. Melalui komunitas saya, saya berusaha membangun jaringan yang kuat antara para profesional IT, menghubungkan mereka dengan peluang-peluang baru, serta memberikan platform untuk mereka berekspresi dan berkontribusi.
+<br><br>
+Namun, perjalanan membangun komunitas tidaklah mudah. Saya telah menghadapi berbagai tantangan dan rintangan di sepanjang jalan, tetapi saya terus bertekad untuk melangkah maju. Setiap hari, saya belajar dari pengalaman dan kesalahan, dan saya bangga melihat bagaimana komunitas saya tumbuh dan berkembang. Dengan semangat yang tak kenal lelah dan dedikasi yang teguh, saya yakin bahwa komunitas IT yang saya dirikan akan terus menjadi tempat yang inspiratif bagi para profesional IT di seluruh dunia.
+<br><br>
+Sebagai seorang pemilik komunitas IT, saya merasa memiliki misi untuk mengubah paradigma tentang bagaimana teknologi informasi dipandang. Saya percaya bahwa teknologi dapat menjadi kekuatan positif yang dapat mengubah dunia, asalkan digunakan dengan bijak dan bertanggung jawab. Oleh karena itu, saya berusaha untuk mempromosikan nilai-nilai seperti etika dalam teknologi, keamanan data, dan inklusi digital di dalam komunitas saya.
+<br><br>
+Akhirnya, saya ingin menciptakan warisan yang positif melalui komunitas IT saya. Saya berharap bahwa apa yang kami bangun hari ini akan menjadi fondasi yang kuat bagi generasi mendatang untuk terus berkembang dan mencapai potensi penuh mereka dalam teknologi informasi. Dengan tujuan ini sebagai panduan, saya berkomitmen untuk terus bekerja keras dan memastikan bahwa komunitas IT saya tetap menjadi tempat yang inspiratif, inklusif, dan inovatif bagi semua anggotanya.</p>
+    </div>
+    
+    
+    
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+        
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            
+            text.style.top = 50 + value * -.1 + '%';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * 2 + 'px';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -.12 + 'px';
+            forest.style.top = value * .25 + 'px';
+            header.style.top = value * .5 + 'px';
+        })
+    </script>
+    
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
